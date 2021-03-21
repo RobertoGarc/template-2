@@ -20,7 +20,7 @@
                     <li><a href="#services">SERVICIOS</a></li>
                     <li><a href="#nosotros">NOSOTROS</a></li>
                     <li><a href="#proyectos">PROYECTOS</a></li>
-                    <li><a href="#">CONTACTO</a></li>
+                    <li><a href="#contacto">CONTACTO</a></li>
                 </ul>
                 <ul class="menu_resposive">
 
@@ -40,7 +40,7 @@
         </div>
     </header>
     <main id="main">
-        <div class="services main-item" id="services">
+        <section class="services main-item" id="services">
             <h2>SERVICIOS</h2>
             <span></span>
             <div class="items">
@@ -65,10 +65,9 @@
                     <h3>Construcción</h3>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos quam laboriosam deserunt, omnis ad placeat consequatur asperiores aliquid assumenda animi, nostrum possimus ducimus officia illum dolorum et praesentium sequi ratione.</p>
                 </div>
-            </div>
-            
-        </div>
-        <div class="nosotros main-item" id="nosotros">
+            </div>     
+        </section>
+        <section class="nosotros main-item" id="nosotros">
             <div class="nosotros-item1">
                 <div class="nosotros-text">
                     <h2>NOSOTROS</h2>
@@ -97,29 +96,95 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="proyectos main-item" id="proyectos">
+        </section>
+        <section class="proyectos main-item" id="proyectos">
             <h2>PROYECTOS</h2>
             <span></span>
             <div class="proyectos-gallery">
                 <div class="gallery-item">
+                    <h3>Proyecto 1</h3>
                     <a href="#"><img src="img/proyecto1.jpg" alt=""></a>
                 </div>
                 <div class="gallery-item">
+                    <h3>Proyecto 2</h3>
                     <a href="#"><img src="img/proyecto2.jpg" alt=""></a>
                 </div>
                 <div class="gallery-item">
+                    <h3>Proyecto 3</h3>
                     <a href="#"><img src="img/proyecto3.jpg" alt=""></a>
                 </div>
                 <div class="gallery-item">
-                    <a href="#"><img src="img/proyecto4.jpg" alt=""></a>
+                    <h3>Proyecto 4</h3>
+                    <a href="#"><img src="img/proyecto4.jpg" alt=""></a>  
                 </div>
             </div>
-        </div>
-        <div class="contacto main-item"></div>
+        </section>
+        <section class="clientes main-item">
+            <h2>CLIENTES</h2>
+            <span></span>
+            <div class="clientes-contenedor">
+                <div class="clientes-item"><img src="img/CLIENTE_1.svg" alt=""></div>
+                <div class="clientes-item"><img src="img/CLIENTE_2.svg" alt=""></div>
+                <div class="clientes-item"><img src="img/CLIENTE_3.svg" alt=""></div>
+                <div class="clientes-item"><img src="img/CLIENTE_4.svg" alt=""></div>
+                <div class="clientes-item"><img src="img/CLIENTE_5.svg" alt=""></div>
+            </div>
+        </section>
+        <section id="contacto" class="contacto main-item">
+            <h2>CONTACTO</h2>
+            <span></span>
+            <div id="map"></div>
+            <div class="contacto-info">
+                <div class="contacto-info-col1">
+                    <div class="col1-item">
+                        <h3>Preguntas<br><br></h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis unde modi, exercitationem incidunt veniam rerum rem. Fuga tempore libero, eligendi quae dolorum totam, iste repudiandae similique nihil eaque autem. Eum! Saepe Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe</p>
+                    </div>
+                    <div class="col1-item">
+                        <form class="form-contacto" action="">
+                            <label for="">Nombre</label>
+                            <input type="text" name="" id="">
+                            <label for="">Apellido</label>
+                            <input type="text" name="" id="">
+                            <label for="">E-mail</label>
+                            <input type="email" name="" id="">
+                            <label for="">Telefono</label>
+                            <input type="tel" name="" id="">
+                            <label for="">Danos un mensaje</label>
+                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                            <button type="submit">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="contacto-info-col2">
+                    <div class="col2-item">
+                        <h3>Oficina Principal <br></h3>
+                        <p><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe</p>
+                        <p><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta ex natus similique laboriosam</p>
+                    </div>
+                    <div class="col2-item">
+                        <h3>Empleos<br><br></h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi sapiente delectus assumenda accusantium culpa velit nihil, veritatis molestias, laborum amet quam, necessitatibus cumque enim deserunt sit corrupti ad quis harum.</p>
+                    </div>
+                    <span></span>
+                    <div class="col2-item">
+                        <br><br><br><br>
+                        <h3>Recibe un presupuesto:<br><br> #Telefono</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
+        <div class="copyrigth">
+            © 2021 hecho por Roberto García 
+        </div> 
+        <div class="socials">
+            <a href=""><img src="img/facebook.svg" alt=""></a>
+            <a href=""><img src="img/linkedin.svg" alt=""></a>
+        </div>
     </footer>
     <script src="JS/scripts.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>
 </body>
 </html>

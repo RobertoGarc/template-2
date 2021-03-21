@@ -308,13 +308,221 @@ display:block;
 
 main .proyectos .gallery-item{
     height: 400px;
+    position: relative;
+}
+
+
+
+/*main .proyectos .gallery-item::after{
+    content:"";
+    position:absolute;
+    top:0;
+    left: 0;
+    background:rgba(255,255,255,0.8);
+    width: 100%;
+    height: 100%;
+    z-index:10;
+    
+}*/
+
+main .proyectos .gallery-item h3{
+    position: absolute;
+    z-index: 20;
+    line-height: 400px;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.4s ease-out;
+    pointer-events: none;
+}
+
+main .proyectos .gallery-item:hover h3{
+    opacity: 1;
+    
 }
 
 main .proyectos .gallery-item img{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: opacity 0.4s ease-out;
 }
+
+main .proyectos .gallery-item:hover img{
+    opacity: 0.2;
+}
+
+
+/*CLIENTES*/
+
+main .clientes .clientes-contenedor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 150px;
+}
+
+main .clientes h2{
+    text-align: center;
+}
+
+main .clientes span{
+    display:block;
+    width: 150px;
+    height: 10px;
+    margin: 20px auto 40px auto;
+    background-color: var(--secondary-color);
+}
+
+main .clientes .clientes-contenedor .clientes-item{
+    width: 20%;
+    height: 100%;
+}
+
+main .clientes .clientes-contenedor .clientes-item img{
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s ease;
+}
+
+main .clientes .clientes-contenedor .clientes-item:hover img{
+    width: 85%;
+    height: 85%;
+}
+
+/*CONTACTO*/
+
+main .contacto h2{
+    text-align: center;
+    margin-top: 50px;
+}
+
+main .contacto span{
+    display:block;
+    width: 150px;
+    height: 10px;
+    margin: 20px auto 40px auto;
+    background-color: var(--secondary-color);
+}
+
+main .contacto #map {
+	height: 500px;
+	width: 100%;
+}
+
+main .contacto .contacto-info{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 55px;
+}
+
+main .contacto .contacto-info .contacto-info-col1{
+    width: 45%;
+}
+
+main .contacto .contacto-info .contacto-info-col1 form{
+    display: flex;
+    flex-flow: column;
+    margin-top: 50px;
+}
+
+main .contacto .contacto-info .contacto-info-col1 form label{
+    margin:10px 0;
+    font-style:italic;
+}
+
+main .contacto .contacto-info .contacto-info-col1 form input{
+    width: 100%;
+    height: 35px;
+    padding: 10px;
+}
+
+main .contacto .contacto-info .contacto-info-col1 form input:focus{
+    color:var(--main-color);
+    outline:1px solid #1E2D3B;
+}
+
+main .contacto .contacto-info .contacto-info-col1 form textarea{
+    resize: none;
+    padding: 10px;
+}
+
+main .contacto .contacto-info .contacto-info-col1 form button{
+    margin-top: 20px;
+    width: 150px;
+    height: 40px;
+    font-size: 17px;
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+    border:none;
+    font-weight: 700;
+    align-self: flex-end;
+    transition: all 0.3s ease;
+}
+
+main .contacto .contacto-info .contacto-info-col1 form button:hover{
+    background-color: var(--secondary-color);
+    color:var(--main-color);
+}
+
+main .contacto .contacto-info .contacto-info-col2{
+    width: 45%;   
+}
+
+main .contacto .contacto-info .contacto-info-col2 .col2-item{
+    margin-bottom: 55px;
+}
+
+main .contacto .contacto-info .contacto-info-col2 .col2-item:last-child h3{
+    color: var(--main-color); 
+    font-weight: 900;
+    line-height: 1em;
+}
+
+/*FOOTER*/
+
+footer{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    background-color: var(--secondary-color);
+    align-items:center;
+    padding: 0 20px;
+}
+
+footer .copyrigth{
+    width: 50%;
+    color: var(--main-color);
+    text-align: center;
+}
+
+footer .socials{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .socials a{
+    height: 75%;
+    margin: 0 10px;
+}
+
+footer img{
+    height: 100%;
+    margin: 0 20px;
+}
+
+
+
+
+
+
+
+
+
 
 
 

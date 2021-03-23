@@ -33,58 +33,73 @@ header nav{
 }
 
 header nav .logo{
-    background-color: var(--secondary-color);
     width: 400px;
-    display:flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 15px;
     cursor: pointer;
 }
 
-header nav .logo div{
+header nav .logo a{
+    height: 100%;
+    width: 100%;
+    padding: 15px;
+    background-color: var(--secondary-color);
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header nav .logo a div{
     width: 65%;
     font-weight: 700;
     font-size: 20px;
+    color: var(--main-color);
 }
 
-header nav .logo div span{
+header nav .logo a div span{
     font-weight: 400;
 }
 
-header nav .logo img{
+header nav .logo a img{
     height: 100%;
+    transition: filter 0.5s ease;
+}
+
+header nav .logo:hover a img{
+    filter: invert();
 }
 
 header nav .menu_contenedor{
     background-color: var(--main-color);
     width: 100%;
     display: flex;
-    justify-content: flex-end;
     align-items: center;
-    padding: 1em;
+    justify-content: flex-end;
 }
 
-header nav .menu_contenedor ul{
-    list-style: none;
+header nav .menu_contenedor .icono{
     color:#fff;
-    display: inline-block;
+    font-size: 40px;
+    display: none;
+    padding-right: 1em;
+    cursor: pointer;
 }
 
-header nav .menu_contenedor ul li{
+header nav .menu_contenedor .menu{
+    list-style: none;
+}
+
+header nav .menu_contenedor .menu li{
     display: inline-block;
     margin:0 20px;
 }
 
-header nav .menu_contenedor ul li a{
+header nav .menu_contenedor .menu li a{
     color: #fff;
     transition: all 0.7s ease;
 }
 
-header nav .menu_contenedor ul li a:hover{
+header nav .menu_contenedor .menu li a:hover{
     font-size: 18px;
     color:var(--secondary-color);
-    
 }
 
 /*BANNER*/
@@ -143,24 +158,22 @@ header .banner a{
 
 header .banner a:hover img{
     width: 50%;
+    filter: drop-shadow(0px 20px 2px #EDCD1F)
 }
 
 header .banner a img{
     width: 70%;
     margin-top: 30px;
     transition: all 0.5s ease;
+    
 }
 
 /*MAIN*/
 
-
-
 main .main-item{
-    width: inherit;
     padding: 50px 0;
     width: 75%;
-    margin: 0 auto;
-    
+    margin: 0 auto;  
 }
 
 main h2{
@@ -194,7 +207,6 @@ main .services span{
 main .services .items{
     display: flex;
     justify-content: space-between;
-
 }
 
 main .services .services-item{
@@ -262,6 +274,8 @@ main .nosotros .nosotros-info .nosotros-info-contenedor{
     justify-content: space-between;
     padding: 20px 0;  
     margin: 0 auto; 
+    flex-wrap: wrap;
+    
 }
 
 
@@ -269,6 +283,7 @@ main .nosotros .nosotros-info .nosotros-info-contenedor .nosotros-info-item{
     width: 15%;
     text-align: center;
     color: var(--subtitle-color);
+    min-width: 144px;
 }
 
 main .nosotros .nosotros-info .nosotros-info-contenedor .nosotros-info-item span{
@@ -513,6 +528,86 @@ footer .socials a{
 footer img{
     height: 100%;
     margin: 0 20px;
+    transition: all 0.3s ease;
+}
+
+footer img:hover{
+    filter:invert()
+}
+
+@media (max-width:992px){
+    header nav .menu_contenedor .menu{
+        display: none;
+    }
+
+    header nav .menu_contenedor .icono{
+        display: block;
+    }
+
+    header nav .logo a div{
+        font-size: 18px;
+        
+    }
+
+    header nav .menu_contenedor .menu li{
+        display: block;
+    }
+
+    main .main-item{
+        width: 90%;
+    }
+
+    main .services .items{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    main .services .services-item{
+        width: 100%;
+    }
+
+    main .services .services-item .item-img{
+        width: 60%;
+        height: 300px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width:780px){
+    header nav .logo a div{
+        font-size: 16px;
+    }
+
+    header nav .logo a div{
+        font-size: 16px;
+    }
+
+    header .banner h1{
+        font-size: 38px;
+    }
+
+    main .services .services-item .item-img{
+        width: 80%;
+        height: 300px;
+    }
+
+    main .nosotros .nosotros-item1{
+        flex-direction: column;
+    }
+
+    main .nosotros .nosotros-item1 .nosotros-text{
+        width: 100%;
+    }
+
+    main .nosotros .nosotros-item1 .nosotros-img{
+        width: 80%;
+    }
+
+    main .nosotros .nosotros-info {
+        justify-content: center;
+        height: 250px;
+    }
+    
 }
 
 

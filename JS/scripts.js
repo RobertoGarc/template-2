@@ -10,3 +10,26 @@ function iniciarMap(){
     });
 }
 
+const hamburguer=document.getElementById('hamburguer');
+const menu=document.getElementById('menu');
+
+hamburguer.addEventListener('click',()=>{
+    menu.classList.toggle('show');
+    if(menu.classList.contains('show'))
+        hamburguer.firstChild.textContent='X';
+    else
+        hamburguer.firstChild.innerHTML='&#9776;';
+})
+
+window.onload = function() {
+    let menu_item = document.querySelectorAll('.menu-item');
+    for (const item of menu_item) {
+    item.addEventListener('click',()=>{
+        menu.classList.toggle('show');
+        if(menu.classList.contains('show'))
+            hamburguer.firstChild.textContent='X';
+        else
+            hamburguer.firstChild.innerHTML='&#9776;';
+    })
+    }
+}

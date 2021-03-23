@@ -258,7 +258,7 @@ main .nosotros .nosotros-item1 .nosotros-text span{
 
 main .nosotros .nosotros-item1 .nosotros-img{
     width: 50%;
-    height: 500px;
+    height: 300px;
 }
 
 main .nosotros .nosotros-item1 .nosotros-img img{
@@ -314,7 +314,7 @@ main .proyectos{
 main .proyectos .proyectos-gallery{
     display: grid;
     gap:25px;
-    grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
+    grid-template-columns: repeat(auto-fill,minmax(275px,1fr));
     grid-auto-flow: dense row;
 }
 
@@ -323,7 +323,7 @@ main .proyectos h2{
 }
 
 main .proyectos span{
-display:block;
+    display:block;
     width: 150px;
     height: 10px;
     margin: 20px auto 40px auto;
@@ -402,7 +402,7 @@ main .clientes span{
 main .clientes .clientes-contenedor .clientes-item{
     width: 20%;
     height: 100%;
-    min-width: 150px;
+    min-width: 130px;
 }
 
 main .clientes .clientes-contenedor .clientes-item img{
@@ -623,7 +623,8 @@ footer img:hover{
     }
 
     header .banner h1{
-        font-size: 38px;
+        font-size: 33px;
+        width: 80%;
     }
 
     main .services .services-item .item-img{
@@ -675,6 +676,38 @@ footer img:hover{
         padding: 10px;
     }
 
+}
+
+@media (max-width:400px){
+    header .banner h1{
+        font-size: 28px;
+    }
+
+    main .nosotros .nosotros-info {
+        height: 450px;
+    }
+
+    main .nosotros .nosotros-info .nosotros-info-contenedor .nosotros-info-item{
+        margin: 0 auto;
+    }
+
+    main .proyectos{
+        margin-top: 400px;
+    }
+
+    main h2{
+        font-size: 32px;
+    }
+}
+
+@media (max-width:300px){
+    header nav .logo a div{
+        font-size: 12px;
+    }
+
+    header nav .logo a img{
+        height: 70%;
+    }
 }
 
 
